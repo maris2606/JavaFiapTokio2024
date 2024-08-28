@@ -68,7 +68,7 @@ public interface ExerciciosSegundaAula {
 		System.out.println("Qual o valor unitário das pecas?");
 		double valorPeca1 = scan.nextDouble();
 		
-		System.out.println("Digite o nome da peça 2:");
+		System.out.println("\nDigite o nome da peça 2:");
 		scan.nextLine();
 		String peca2 = scan.nextLine();	
 		System.out.println("Quantas peças você quer?");
@@ -88,12 +88,27 @@ public interface ExerciciosSegundaAula {
 		// System.out.println();
 		// exercicio 7
 		System.out.println("----- ex. 7 ---- ");
-		System.out.println("Digite o valor do produto:");
-		double valorProd = scan.nextDouble();
-		System.out.println("Digite o valor pago:");
-		double valorPago = scan.nextDouble();
+		double valorProd, valorPago; 
+		double diferenca = -1;
 		
-		System.out.printf("O troco a ser devolvido é: R$%.2f\n", valorPago - valorProd);
+		System.out.println("Digite o valor do produto:");
+		valorProd = scan.nextDouble();
+		
+		while (diferenca < 0) {
+			System.out.println("Digite o valor pago:");
+			valorPago = scan.nextDouble();
+			
+			diferenca = valorPago - valorProd;
+			
+			if (valorPago<valorProd) {
+				System.out.printf("Ainda faltam: R$%.2f\n", Math.abs(diferenca));
+			} else {
+				System.out.printf("O troco a ser devolvido é: R$%.2f\n", diferenca);
+			}
+			
+			valorProd -= valorPago;
+		}
+		
 		
 		// exercicio 8
 		System.out.println("----- ex. 8 ----");
@@ -120,9 +135,9 @@ public interface ExerciciosSegundaAula {
 		System.out.println("----- ex. 9 ----");		
 		System.out.println("digite um numero:");
 		int num = scan.nextInt();
-		int centena =  (num/100)*100;
-		int dezena = ((num-centena)/10)*10;
-		int unidade = (num-centena)-dezena;
+		int centena = (int) (num/100)*100;
+		int dezena = (int) ((num-centena)/10)*10;
+		int unidade = (int) (num-centena)-dezena;
 		
 		System.out.printf(
 				"centena = %d \ndezena = %d \nunidade = %d\n", 
@@ -147,9 +162,9 @@ public interface ExerciciosSegundaAula {
 		System.out.println("digite sua idade em dias ");
 		int idade = scan.nextInt();
 		
-		anos = idade/365;	
-		meses = (idade-(anos*365))/30;	
-		dias = idade-(anos*365)-(meses*30);	
+		anos = (int) idade/365;	
+		meses = (int) (idade-(anos*365))/30;	
+		dias = (int) idade-(anos*365)-(meses*30);	
 		
 		System.out.printf("Parabéns, você já viveu:"
 				+ "\n%d anos"
