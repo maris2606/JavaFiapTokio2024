@@ -132,7 +132,7 @@ public interface ExerciciosSegundaAula {
 		
 		// exercicio 10
 		System.out.println("----- ex. 10 ----");	
-		System.out.println("digite sua idade em");
+		System.out.println("digite sua idade em ");
 		System.out.println("anos:");
 		int anos = scan.nextInt();		
 		System.out.println("meses:");
