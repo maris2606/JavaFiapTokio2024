@@ -154,7 +154,7 @@ public interface ExerciciosSegundaAula {
 		System.out.printf("Parabéns, você já viveu:"
 				+ "\n%d anos"
 				+ "\n%d meses "
-				+ "\ne %d dias",
+				+ "\ne %d dias ",
 				anos, meses, dias
 		);
 		
