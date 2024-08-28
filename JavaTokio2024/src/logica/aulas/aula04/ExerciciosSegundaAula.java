@@ -140,7 +140,7 @@ public interface ExerciciosSegundaAula {
 		System.out.println("dias:");
 		int dias = scan.nextInt();	
 		
-		System.out.println("Você já viveu: " + (anos*365+ meses*30 + dias));
+		System.out.println("Você já viveu: " + (anos*365+ meses*30 + dias) + "\n");
 		
 		// exercicio extra
 		System.out.println("----- ex. extra ----");		
@@ -153,8 +153,8 @@ public interface ExerciciosSegundaAula {
 		
 		System.out.printf("Parabéns, você já viveu:"
 				+ "\n%d anos"
-				+ "\n%d meses "
-				+ "\ne %d dias ",
+				+ "\n%d meses"
+				+ "\ne %d dias",
 				anos, meses, dias
 		);
 		
