@@ -87,7 +87,7 @@ public interface ExerciciosSegundaAula {
 		
 		// System.out.println();
 		// exercicio 7
-		System.out.println("----- ex. 7 ----");
+		System.out.println("----- ex. 7 ---- ");
 		System.out.println("Digite o valor do produto:");
 		double valorProd = scan.nextDouble();
 		System.out.println("Digite o valor pago:");
