@@ -14,7 +14,7 @@ public class exextra {
 		System.out.println("anos:");
 		int anos = idade/365;	
 		System.out.println("meses:");
-		int meses = (idade-(anos*365))/30;	
+		int meses = (idade-(anos*365))/30;
 		System.out.println("dias:");
 		int dias = idade-(anos*365)-(meses*30);	
 		

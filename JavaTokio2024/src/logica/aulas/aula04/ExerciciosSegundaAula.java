@@ -147,11 +147,8 @@ public interface ExerciciosSegundaAula {
 		System.out.println("digite sua idade em dias");
 		int idade = scan.nextInt();
 		
-		System.out.println("anos:");
 		anos = idade/365;	
-		System.out.println("meses:");
 		meses = (idade-(anos*365))/30;	
-		System.out.println("dias:");
 		dias = idade-(anos*365)-(meses*30);	
 		
 		System.out.printf("Parabéns, você já viveu:"
