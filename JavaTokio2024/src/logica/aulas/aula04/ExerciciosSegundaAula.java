@@ -115,11 +115,11 @@ public interface ExerciciosSegundaAula {
 		System.out.println("Digite o valor a ser convertido:");
 		double valor = scan.nextDouble();	
 		
-		double dolar = valor * 5.50;
-		double peso = valor * 0.0058;
-		double euro = valor * 6.15;
-		double libra = valor * 7.30;
-		double iene = valor * 0.038;
+		double dolar = valor / 5.50;
+		double peso = valor / 0.0058;
+		double euro = valor / 6.15;
+		double libra = valor / 7.30;
+		double iene = valor / 0.038;
 		
 		System.out.printf(
 				"valor em real: %.2f\n"
