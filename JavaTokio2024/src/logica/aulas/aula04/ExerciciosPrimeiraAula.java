@@ -13,6 +13,7 @@ public interface ExerciciosPrimeiraAula {
 		int variavel;
 		variavel = 1;
 		
+		
 		System.out.println(variavel);
 		
 		// exercicio 2
@@ -43,6 +44,7 @@ public interface ExerciciosPrimeiraAula {
 		
 		
 		scan.close();
+		// -----
 		
 	}
 

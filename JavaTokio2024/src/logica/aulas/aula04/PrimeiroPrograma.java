@@ -7,10 +7,7 @@ public class PrimeiroPrograma {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-		
-//		System.out.println("Hello World!!");
-//		
-//		System.out.println("Olá Mundo!!");
+
 		
 		int anoDeNascimento;
 		int idade;
