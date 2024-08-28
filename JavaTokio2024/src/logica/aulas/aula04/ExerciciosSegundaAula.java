@@ -144,7 +144,7 @@ public interface ExerciciosSegundaAula {
 		
 		// exercicio extra
 		System.out.println("----- ex. extra ----");		
-		System.out.println("digite sua idade em dias");
+		System.out.println("digite sua idade em dias ");
 		int idade = scan.nextInt();
 		
 		anos = idade/365;	
