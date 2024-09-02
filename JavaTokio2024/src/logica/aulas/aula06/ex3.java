@@ -7,10 +7,10 @@ public class ex3 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		double nota1 = scan.nextInt();
-		double nota2 = scan.nextInt();
-		double nota3 = scan.nextInt();
-		double nota4 = scan.nextInt();
+		double nota1 = scan.nextDouble();
+		double nota2 = scan.nextDouble();
+		double nota3 = scan.nextDouble();
+		double nota4 = scan.nextDouble();
 		
 		double notafim = (nota1 + nota2 + nota3 + nota4)/4;
 		
