@@ -1,5 +1,7 @@
 package logica.aulas.aula10;
 
+import java.util.Scanner;
+
 public class ex5 {
 	
 	static void temperatura(double valor, char caractere) {
@@ -8,17 +10,17 @@ public class ex5 {
 		double f = 0;
 		
 		switch(caractere) {
-			case 'C':
+			case 'C'|'c':
 				c = valor;
 				f = valor * 1.8 + 32;
 				k = valor + 273.15;
 				break;
-			case 'F':
+			case 'F'|'f':
 				f = valor;
 				c = (valor - 32) / 1.8;
 				k = (valor - 32) * 1.8 + 273.15;
 				break;
-			case 'K':
+			case 'K'|'k':
 				k = valor;
 				c = valor - 273.15;
 				f = (valor - 273.15) * 1.8 + 32;
@@ -34,6 +36,15 @@ public class ex5 {
 	}
 	
 	public static void main(String[] args) {
-		temperatura(100, 'K');
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite a temperatura a ser convertida: ");
+		double temp = scan.nextDouble();	
+		
+		System.out.println("Digite qual a unidade dessa temperatura: ");
+		char unidade = scan.next().charAt(0);	
+		
+		temperatura(temp, unidade);
 	}
 }
